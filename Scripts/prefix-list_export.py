@@ -1,5 +1,13 @@
 #! /usr/bin/env python3
 
+"""This represents a legacy-sdwan migration use case. This script takes a cisco IOS config file as an input,
+parses all prefix-lists configured and sets it to the json formated data structure which is send to the
+SD-WAN controller as an API call.
+
+As a final result we see all the prefix-list transfered from raw text IOS config to the controller config object
+via API"""
+
+
 from restapicalls import RestApiCalls
 import json
 import os

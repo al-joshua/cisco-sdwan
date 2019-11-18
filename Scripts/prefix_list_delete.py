@@ -1,5 +1,7 @@
 #! /usr/bin/env python3
 
+"""This script removes all the unused prefix-lists from SDWAN controller via API"""
+
 from restapicalls import RestApiCalls
 import json
 import os
